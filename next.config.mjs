@@ -7,10 +7,9 @@
 /** @type {import("next").NextConfig} */
 const config = {
   reactStrictMode: true,
-  reactStrictMode: true,
-	swcMinify: true,
-	poweredByHeader: false,
-	env: {},
-	images: {}
+  swcMinify: true,
+  poweredByHeader: false,
+  env: {},
+  images: {}
 };
 export default config;
