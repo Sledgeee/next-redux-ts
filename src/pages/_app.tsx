@@ -1,18 +1,9 @@
-import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
-import { type AppType } from "next/app";
+import { type AppType } from 'next/app'
 
-import "@/styles/index.css";
+import '@/styles/index.css'
 
-const MyApp: AppType<{ session: Session | null }> = ({
-  Component,
-  pageProps: { session, ...pageProps },
-}) => {
-  return (
-    <SessionProvider session={session}>
-      <Component {...pageProps} />
-    </SessionProvider>
-  );
-};
+const MyApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
+	return <Component {...pageProps} />
+}
 
-export default MyApp;
+export default MyApp
